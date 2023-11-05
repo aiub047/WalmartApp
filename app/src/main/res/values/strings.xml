@@ -7,8 +7,23 @@
     <string name="lblForgotPassword">Forgot Password?</string>
     <string name="lblSignIn">Sign In</string>
     <string name="lblSignInAccount">Sign in to your account</string>
+    <string name="lblCreateNewAccount">Create your account</string>
     <string name="lblEmpty" />
     <string name="lblNoAccount">Don\'t have an account?</string>
     <string name="lblCreateNewAcc">Create a new account</string>
     <string name="descWalmartLogo">Walmart logo</string>
+    <string name="lblShoppingTableHeader">Shop by Categories</string>
+    <string name="descElectronics">Electronic items</string>
+    <string name="descClothes">Clothes</string>
+    <string name="descBeautyItems">Beauty items</string>
+    <string name="descGroceryItems">Grocery items</string>
+    <string name="lblFood">Food</string>
+    <string name="lblBeauty">Beauty</string>
+    <string name="lblClothing">Clothing</string>
+    <string name="lblElectronics">Electronics</string>
+    <string name="lblFirstName">First Name*</string>
+    <string name="lblLastName">Last Name*</string>
+    <string name="lblEmailAddressStared">Email Address*</string>
+    <string name="lblPasswordStared">Password*</string>
+    <string name="lblCreateAccount">Create Account</string>
 </resources>
