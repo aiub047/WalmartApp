@@ -26,4 +26,15 @@
     <string name="lblEmailAddressStared">Email Address*</string>
     <string name="lblPasswordStared">Password*</string>
     <string name="lblCreateAccount">Create Account</string>
+    <string name="txtItemName">Galaxy</string>
+    <string name="txtSamplePrice">$1250</string>
+    <string name="txtAdd">Add</string>
+    <string name="txtItemModel">S23 Ultra</string>
+    <string name="lblSampleEmail">a@b.com</string>
+    <string name="lblSamplePassword">123</string>
+    <string name="txtItemDesc">12-core CPU\n18-core GPU</string>
+    <string name="lblHome">Home</string>
+    <string name="lblViewCart">View Cart</string>
+    <string name="lblBack">Back</string>
+    <string name="lblAvailableItems">Available Items</string>
 </resources>

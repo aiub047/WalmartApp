@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val users = ArrayList<User>()
-        users.add(User("Aiub", "Khan", "aiub047@gmail.com", "123"))
+        users.add(User("Aiub", "Khan", "a@b.com", "123"))
         users.add(User("Joe", "Martin", "joe@gk.com", "234"))
         users.add(User("Mark", "Anthony", "mark@gk.com", "345"))
         users.add(User("Damien", "Martin", "dam@gk.com", "456"))
@@ -49,11 +49,16 @@ class MainActivity : AppCompatActivity() {
                 showToastMessage("Invalid user or password")
                 return@setOnClickListener
             }
+
             //In java: Intent intent = new Intent(this, ShoppingActivity.class)
 
             val shoppingIntent = Intent(this, ShoppingActivity::class.java)
             shoppingIntent.putExtra("userName", validUser.userName)
             startActivity(shoppingIntent)
+
+            /*val shoppingIntent = Intent(this, ShoppingActivity::class.java)
+            shoppingIntent.putExtra("userName", "a@b.com")
+            startActivity(shoppingIntent)*/
         }
 
         tvForgotPasswordButton.setOnClickListener {
@@ -96,7 +101,6 @@ class MainActivity : AppCompatActivity() {
                     if (userData != null) {
                         users.add(userData)
                         showToastMessage("User with ${userData.userName} created.")
-                        //userData.userName?.let { showToastMessage(it) }
                     } else {
                         showToastMessage("Failed to retrieve user data")
                     }
@@ -106,8 +110,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         btnCreateNewAcc.setOnClickListener {
-            //val registerIntent = Intent(this, RegisterActivity::class.java)
-            //startActivity(registerIntent)
             val intent = Intent(this, RegisterActivity::class.java)
             registerResultContract.launch(intent)
         }
